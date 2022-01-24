@@ -10,14 +10,19 @@ namespace ClassesExercise
         private string v5;
         private bool v6;
 
+        
         public Car()
         {
-            
+            CarLot.numberOfCars++;
+            Console.WriteLine($"numbersOfCars;{CarLot.numberOfCars}");
 
         }
 
         public Car(int v1, string v2, string v3, string v4, string v5, bool v6)
         {
+            CarLot.numberOfCars++;
+            Console.WriteLine($"numbersOfCars;{CarLot.numberOfCars}");
+
             this.v1 = v1;
             this.v2 = v2;
             this.v3 = v3;
